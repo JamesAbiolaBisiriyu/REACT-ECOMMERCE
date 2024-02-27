@@ -1,0 +1,156 @@
+REACT-ECOMMERCE-WEBSITE-USING-REACT-JS
+Go to this website https://reactrouter.com/en/main/start/tutorial, copy npm create vite@latest ./ (i.e this file is to be installed under this current folder) press ENTER, then select REACT as framework and then JAVASCRIPT as language.npm install to install packages and then NPM RUN DEV to run our application.
+TO CUSTOMIZE PROJECT: remove all codes and leave with fragments, in the APP.JSX
+NEXT: install REACT_ROUTER_DOM in a separate terminal "npm install react-router-dom localforage match-sorter sort-by" and press ENTER
+NEXT: is set up our ROUTER: To set up our ROUTER , we will go to MAIN.JSX file, and we will import the color code by pasting "import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";"
+and then set up ROUTER ROUTER =browser D
+"const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello world!</div>,
+  },
+]);"
+NEXT: is to use ROUTER PROVIDER and then render
+      <RouterProvider router={router} />
+because we setup out ROUTER in the main.jsx, the browser displays contents of the main.jsx which is "HELLO WORLD",
+we render the contents of the APP.JSX, by mounting it in the MAIN.JSX, element: <APP/>, which then renders the contents of the APP.JSX, then DELETE all styling in INDEX.CSS. and also all styling in APP.CSS. 
+SETTING UP BOOTSTRAP 5: 'npm i bootstrap@5.3.2' paste on second terminal, and press ENTER. To check, from package.json, our dependecy is bootstrap "dependencies": {
+    "bootstrap": "^5.3.2",
+then we install the REACT BOOTSTRAP, with npm install react-bootstrap bootstrap
+THEN install counterup with this 'npm i react-countup'
+THEN we install SWIPER JS : 'npm install swiper' and lastly we install
+POPPERJS : npm i @popperjs/core, everything has been installed, we can see from the DEPENDENCIES
+To gain access to images used in the project, visit his github page "https://github.com/mdalmamunit427"
+select REPOSITORIES na d search ADVANCE REACTJS, and download zip file
+and also in the github, main.jsx file and copy 
+'import 'swiper/css';
+// bootstrap css
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';'
+and paste in main.jsx (bootstrap CDN and SWIPER CDN)
+download FAV icon from GITHUB, and replace VITE root file with FAV.ICO, ans also the Title, 
+the styling also changed, based on BOOTSTRAP (fs-4- fontsize m-5 pt-5)
+we create a home folder with a HOME component, and then use it in our APP, but before that, we define it in our ROUTE, 'MAIN.JSX' children:[
+      {path: "/",
+    element: <Home/>,
+  }
+    ]
+
+it does no changes to the website, so to make it work, we have to go to our APP.JSX, and use the <OUTLET> tag, which renders the HOME>JSX on the site.
+we create a blog file with a BLOG component and mount it to our MAIN.JSX as a child similar to the 'home', create a 'component folder' and inside the folder we create a "NAVITEMS.JSX" file and mount it in our APP.JSX, in the NAVITEMS, we use the 'useState' hook to mutate state of variables
+
+  const [menuToggle, setMenuToggle] = useState(false);
+  const [socialToggle, setSocialToggle] = useState(false)
+  const [headerFixed, setHeaderFixed] = useState(false)
+
+window.addEventListener("scroll", ()=>{
+    if (window.scrollY > 200) {
+      setHeaderFixed(true)
+    }
+  })
+In summary, this code listens for scroll events on the window, and when the user has scrolled down at least 200 pixels, it triggers a function (setHeaderFixed(true)) to perform some action, presumably related to fixing the header in place on the page.
+We create a <LINK> tag with classname "lab-btn me-3"
+
+
+```jsx
+<div className={`header-top d-md-none ${socialToggle ? "open" : ""}`}>
+```
+
+- `className`: In React, the `className` attribute is used to apply CSS class names to an element.
+
+- Template literals: The backticks (`) denote template literals, allowing you to embed expressions within a string.
+
+- `"header-top d-md-none"`: These are static class names that will always be applied to the `div` element.
+
+- `${socialToggle ? "open" : ""}`: This is a dynamic class name based on the value of the `socialToggle` variable. If `socialToggle` is truthy, the class name "open" will be added; otherwise, an empty string will be added.
+
+Putting it all together, the final class names applied to the `div` will depend on the truthiness of `socialToggle`. If `socialToggle` is true, the class names will be "header-top d-md-none open"; if false, it will be "header-top d-md-none". This kind of setup is commonly used for conditionally applying styles in React components. In this case, the "open" class may be used for styling or other functionality when `socialToggle` is true.
+
+This code snippet appears to be written in JSX, which is a syntax extension for JavaScript often used with React for building user interfaces. Let's break down the code:
+
+```jsx
+<header className={`header-section style-4 ${headerFixed ? "header-fixed fadeInUp" : ""}`}>
+```
+
+1. `<header>`: This is a JSX element representing the HTML `<header>` tag. It is likely used to define a header section in a web page.
+
+2. `className={`...`}`: The `className` attribute is used to assign CSS class names to the HTML element. In JSX, you use `className` instead of the standard HTML attribute `class` to avoid conflicts with the `class` keyword in JavaScript. The backticks (` `) are used for string interpolation.
+
+3. `header-section style-4`: These are static class names that are always applied to the `<header>` element.
+
+4. `${headerFixed ? "header-fixed fadeInUp" : ""}`: This is a dynamic part of the class names. It uses a ternary operator (`condition ? value_if_true : value_if_false`) to determine whether to include the classes "header-fixed" and "fadeInUp" based on the value of the variable `headerFixed`.
+
+   - If `headerFixed` is truthy, it adds the classes "header-fixed" and "fadeInUp" to the `className`.
+   - If `headerFixed` is falsy, it adds an empty string to the `className`, resulting in no additional classes being added.
+
+The overall effect is that when `headerFixed` is truthy, the classes "header-fixed" and "fadeInUp" are added to the header element, and when `headerFixed` is falsy, only the static classes "header-section" and "style-4" are applied.
+
+This kind of dynamic class assignment is often used in responsive web design or when applying different styles based on certain conditions or states in a React application.
+
+<Link to='sign-up' className="lab-btn me-3 d-none d-md-block">Create Account</Link>
+The code you provided is a JSX code snippet in a React application that includes a `<Link>` component. Let me break down the code for you:
+
+```jsx
+<Link to='sign-up' className="lab-btn me-3 d-none d-md-block">Create Account</Link>
+```
+used after navmenu <div><ul></ul></div> tag
+Here's an explanation of each part:
+
+1. `<Link>`: This is a component typically used in React applications for navigation. It's likely imported from a routing library, such as React Router. This component is used to create links between different views or pages in the application.
+
+2. `to='sign-up'`: The `to` prop is specifying the destination or path to which the link will navigate. In this case, when the user clicks the link, it will navigate to the 'sign-up' route or page.
+
+3. `className="lab-btn me-3 d-none d-md-block"`: The `className` prop is used to apply CSS classes to the `<Link>` component. In this example:
+   - `"lab-btn"` is a CSS class that might be defining the styling for a button.
+   - `"me-3"` adds margin to the right side of the button (spacing between this button and the next element).
+   - `"d-none"` is a Bootstrap utility class that sets the element to be hidden.
+   - `"d-md-block"` is another Bootstrap utility class that sets the element to be visible on medium-sized screens and above.
+
+4. `Create Account`: This is the text or content of the link that will be displayed to the user. In this case, it's the label "Create Account" that the user can click on.
+
+So, in summary, this code represents a link that, when clicked, navigates to the 'sign-up' route or page. The link is styled as a button with specific classes, and its visibility is controlled based on screen size using Bootstrap utility classes.
+
+We use ICOFONT, for icons, www.icofonts.com, search for INFO and then select and copy code, and paste inside my code, changing CLASS to CLASSNAME.
+NEXT IS BANNER SECTION.
+BANNER SECTION: Our banner has a banner, an input field (some categorizations) and also search for any products e.g shoe related data and pants, to create this banner, since we are basing our project on page, thats why our homepage has to hold the banner, (so we create the file for the BANNER in our home folder), we import 'Banner.jsx' into the 'Home.jsx', next we define our Banner, we copy some data from "https://github.com/mdalmamunit427/advanced-reactjs-ecommerce-website-starter-files/blob/main/public/project_description.md" and copy "const bannerList = [
+{
+iconName: "icofont-users-alt-4",
+text: "1.5 Million Customers",
+},
+{
+iconName: "icofont-notification",
+text: "More then 2000 Marchent",
+},
+{
+iconName: "icofont-globe",
+text: "Buy Anything Online",
+},
+];"
+from CODE
+we define const title, and the we design our BANNER
+The INPUT FIELD : under the {title}, we create the field by typing FORM
+
+We create two useState, one for "  const [searchInput, setsearchInput] = useState("");
+" and the other "  const [filterdProducts, setfilterdProducts] = useState("");
+" and instead of the empty "" string, we pass a data from products.json, so we import it, we use "  console.log(productData);" to check 
+
+Certainly! The code you provided is a JavaScript function written using the arrow function syntax. Let me break it down for you:
+
+```javascript
+const handleSearch = e => {
+    console.log(e.target.value);
+}
+```
+
+1. `const handleSearch`: This line declares a constant variable named `handleSearch`. The `const` keyword is used to create a constant variable, which means its value cannot be reassigned.
+
+2. `= e => {`: This part defines an arrow function. Arrow functions are a concise way to write functions in JavaScript. In this case, the function takes one parameter, `e`, which presumably stands for an event object.
+
+3. `console.log(e.target.value)`: Inside the function body, there is a single statement that logs the `value` property of the `target` property of the event object `e` to the console. This line assumes that `e` is an event object, and it's logging the value associated with the element that triggered the event. This is often used in input fields, where `e.target.value` would represent the current value of an input field when it changes.
+
+In summary, the purpose of this code is to define a function `handleSearch` that logs the value of an input field whenever it changes. It's commonly used as an event handler for input elements, such as search boxes, where you want to perform some action whenever the user types or modifies the input.
+
+
