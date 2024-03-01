@@ -7,7 +7,7 @@ const btnText = "Get Started Now";
 
 const categoryList = [
   {
-    imgUrl: "src/assets/images/category/01.jpg",
+    imgUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.konga.com%2Fproduct%2Fleather-mens-shoe-black-5725444&psig=AOvVaw3jVXZLppZhRq48a8t-l3FU&ust=1709365053735000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMDAs5zH0oQDFQAAAAAdAAAAABAE",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "DSLR Camera",

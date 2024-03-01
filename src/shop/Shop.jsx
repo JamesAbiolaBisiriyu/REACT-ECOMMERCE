@@ -6,6 +6,8 @@ import ProductCards from './ProductCards'
 import Pagination from './Pagination'
 import Search from './Search'
 import ShopCategory from './ShopCategory'
+import PopularPost from './PopularPost'
+import Tags from './Tags'
 
 
 const showResults = "Showing 01 - 12 0f 139 Results"
@@ -13,7 +15,7 @@ const showResults = "Showing 01 - 12 0f 139 Results"
 const Shop = () => {
 const [GridList, setGridList] = useState(true);
 const [Products, setProducts] = useState(Data);
-console.log(Products);
+// console.log(Products);
 // pagination logic
 const [currentPage, setCurrentPage] = useState(1);
 const productsPerPage = 12;
@@ -83,6 +85,8 @@ const filterItem = (currcat) => {
                 setProducts = {setProducts}
                 selectedCategory = {selectedCategory}
                 />
+                <PopularPost/>
+                <Tags/>
               </aside>
             </div>
           </div>
