@@ -7,13 +7,13 @@ const btnText = "Get Started Now";
 
 const categoryList = [
   {
-    imgUrl: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.konga.com%2Fproduct%2Fleather-mens-shoe-black-5725444&psig=AOvVaw3jVXZLppZhRq48a8t-l3FU&ust=1709365053735000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMDAs5zH0oQDFQAAAAAdAAAAABAE",
+    imgUrl: "https://i.ebayimg.com/images/g/yXgAAOSwNtlj7sj~/s-l1200.webp",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "DSLR Camera",
   },
   {
-    imgUrl: "src/assets/images/category/02.jpg",
+    imgUrl: "https://i.ebayimg.com/images/g/yXgAAOSwNtlj7sj~/s-l1200.webp",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Shoes",
