@@ -7,13 +7,13 @@ const btnText = "Get Started Now";
 
 const categoryList = [
   {
-    imgUrl: "https://i.ebayimg.com/images/g/yXgAAOSwNtlj7sj~/s-l1200.webp",
+    imgUrl: "src/assets/images/category/01.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "DSLR Camera",
   },
   {
-    imgUrl: "https://i.ebayimg.com/images/g/yXgAAOSwNtlj7sj~/s-l1200.webp",
+    imgUrl: "src/assets/images/category/02.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Shoes",

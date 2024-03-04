@@ -6,6 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import ProductDisplay from "./ProductDisplay";
+import Review from "./Review";
+import PopularPost from "./PopularPost";
+import Tags from "./Tags";
 
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
@@ -18,7 +22,7 @@ const SingleProduct = () => {
   }, []);
   // console.log(product);
   const result = product.filter((p) => p.id === id);
-  console.log(result);
+  // console.log(result);
   return (
     <div>
       <PageHeader title={"OUR SHOP SINGLE"} curPage={"Shop/Single Product"} />
@@ -68,7 +72,7 @@ const SingleProduct = () => {
                     <div className="post-content">
                       <div>
                         {
-                          result.map((item => <p key={item.id}>{item.name}</p>))
+                          result.map(item => <ProductDisplay key={item.id} item={item}/> )
                         }
                       </div>
                     </div>
@@ -76,12 +80,19 @@ const SingleProduct = () => {
                   </div>
                 </div>
                 {/* Reviews */}
-                <div className="review">Review</div>
+                <div className="review">
+                  <Review/>
+                </div>
               </article>
             </div>
 
             {/* Right Side */}
-            <div className="col-lg-4 col-12 ">Right Side</div>
+            <div className="col-lg-4 col-12 ">
+              <aside className="ps-lg-4">
+                    <PopularPost/>
+                    <Tags/>
+              </aside>
+            </div>
           </div>
         </div>
       </div>
