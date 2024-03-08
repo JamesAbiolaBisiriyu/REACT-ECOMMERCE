@@ -19,7 +19,7 @@ const blogList = [
     },
     {
         id: 2,
-        imgUrl: '/src/assets/images/blog/02.jpg',
+        imgUrl: 'https://bhp.co.uk/wp-content/uploads/2023/10/Delays-3-s-aspect-ratio-460-300-768x501.jpg',
         imgAlt: 'Blog Thumb',
         title: 'Financial Reporting Qouncil What Could More.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -38,7 +38,7 @@ const blogList = [
     },
     {
         id: 3,
-        imgUrl: '/src/assets/images/blog/03.jpg',
+        imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAht8CsBDYKhC1gDxGRyJ9hKNuGVIEWPWcQ&usqp=CAU',
         imgAlt: 'Blog Thumb',
         title: 'Consulting Reporting Qounc Arei Could More.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -57,7 +57,7 @@ const blogList = [
     },
     {
         id: 4,
-        imgUrl: '/src/assets/images/blog/04.jpg',
+        imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7nuz8hfkoK_YwQehCD7HRDJrFo7JRMP0h3g&usqp=CAU',
         imgAlt: 'Blog Thumb',
         title: 'Strategic Social Media and of visual design.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -76,7 +76,7 @@ const blogList = [
     },
     {
         id: 5,
-        imgUrl: '/src/assets/images/blog/05.jpg',
+        imgUrl: 'https://www.teencoders.com.ng/wp-content/uploads/2020/02/blog_image1.jpg',
         imgAlt: 'Blog Thumb',
         title: 'Find the Right Path for your Group Course online.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -95,7 +95,7 @@ const blogList = [
     },
     {
         id: 6,
-        imgUrl: '/src/assets/images/blog/06.jpg',
+        imgUrl: 'https://www.lifewire.com/thmb/r9xSipFphSnG_n4waD3gSn7wE2k=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Primary_Image-7c2718e3002b4a96b83371be828540c6.jpg',
         imgAlt: 'Blog Thumb',
         title: 'Learn by doing with Real World Projects other countries.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -114,7 +114,7 @@ const blogList = [
     },
     {
         id: 7,
-        imgUrl: '/src/assets/images/blog/07.jpg',
+        imgUrl: 'https://www.thetechedvocate.org/wp-content/uploads/2023/10/motivation-in-education-twit-1-660x400@2x.webp',
         imgAlt: 'Blog Thumb',
         title: 'The Importance Of Intrinsic for Students.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -133,7 +133,7 @@ const blogList = [
     },
     {
         id: 8,
-        imgUrl: '/src/assets/images/blog/08.jpg',
+        imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAc5JApYmbf8M4U-cyJMCqZ-YqbnC3XuOwA&usqp=CAU',
         imgAlt: 'Blog Thumb',
         title: 'A Better Alternative To Grading Student Writing.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
@@ -152,7 +152,7 @@ const blogList = [
     },
     {
         id: 9,
-        imgUrl: '/src/assets/images/blog/09.jpg',
+        imgUrl: 'https://www.brookings.edu/wp-content/uploads/2019/07/global_nigeria_classroom.jpg?quality=75',
         imgAlt: 'Blog Thumb',
         title: 'The Challenge Global Learning In Public Education.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
