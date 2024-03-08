@@ -1,6 +1,6 @@
 const blogList = [
     {   id: 1,
-        imgUrl: '/src/assets/images/blog/01.jpg',
+        imgUrl: 'https://www.cityam.com/wp-content/uploads/2014/06/027-money-1-57ed668b479bc-57ed668b57e3f.jpg',
         imgAlt: 'Blog Thumb',
         title: 'Business Ueporting Rouncil Them Could Plan.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',
