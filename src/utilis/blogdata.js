@@ -38,7 +38,7 @@ const blogList = [
     },
     {
         id: 3,
-        imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAht8CsBDYKhC1gDxGRyJ9hKNuGVIEWPWcQ&usqp=CAU',
+        imgUrl: 'https://catradeconsulting.com/wp-content/uploads/2022/03/service-7.jpg',
         imgAlt: 'Blog Thumb',
         title: 'Consulting Reporting Qounc Arei Could More.',
         desc: 'Pluoresnts customize prancing apcentered customer service anding ands asing straelg Interacvely cordinate performe',

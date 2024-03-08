@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import blogList from "../utilis/blogdata";
 import { useParams } from "react-router-dom";
 import PageHeader from "../components/PageHeader";
+import Tags from "../shop/Tags";
+import PopularPost from "../shop/PopularPost";
+
 const socialList = [
   { link: "#", iconName: "icofont-facebook", className: "facebook" },
   { link: "#", iconName: "icofont-twitter", className: "twitter" },
@@ -53,7 +56,7 @@ const SingleBlog = () => {
                                     ))}
                                   </ul>
                                 </div>
-                                <p className="">
+                                <p>
                                   Lorem ipsum dolor sit amet consectetur
                                   adipisicing elit. Quo quibusdam repellendus
                                   iste doloremque magni, odit quia ipsam debitis
@@ -137,6 +140,7 @@ const SingleBlog = () => {
                                   <a
                                     href="https://youtu.be/L_b277qj3P4?si=jEpN9UtnxOO9UF91"
                                     className="video-button popup"
+                                    target="_blank"
                                   >
                                     <i className="icofont-ui-play"></i>
                                   </a>
@@ -170,24 +174,22 @@ const SingleBlog = () => {
                                   <ul className="tags lab-ul">
                                     <li>
                                       <a href="#">Agency</a>
-                                    </li>{" "}
+                                    </li>
                                     <li>
                                       <a href="#">Buisness</a>
-                                    </li>{" "}
+                                    </li>
                                     <li>
                                       <a href="#">Personal</a>
                                     </li>
                                   </ul>
                                   <ul className="lab-ul social-icons">
-                                    {
-                                      socialList.map((val, i)=>(
-                                        <li key={i}>
-                                          <a href="#" className={val.className}>
-                                            <i className={val.iconName}></i>
-                                          </a>
-                                        </li>
-                                      ))
-                                    }
+                                    {socialList.map((val, i) => (
+                                      <li key={i}>
+                                        <a href="#" className={val.className}>
+                                          <i className={val.iconName}></i>
+                                        </a>
+                                      </li>
+                                    ))}
                                   </ul>
                                 </div>
                               </div>
@@ -195,12 +197,42 @@ const SingleBlog = () => {
                           ))}
                         </div>
                       </div>
+                      <div className="navigations-part">
+                        <div className="left">
+                          <a href="#" className="prev">
+                            <i className="icofont-double-left"></i> PREVIOUS
+                            BLOG
+                          </a>
+                          <a href="#" className="title">
+                            Evisculate Parallel processes Via Technica Sound
+                            Models Authoritative
+                          </a>
+                        </div>
+                        <div className="right">
+                          <a href="#" className="prev">
+                            <i className="icofont-double-right"></i> PREVIOUS
+                            BLOG
+                          </a>
+                          <a href="#" className="title">
+                            Evisculate Parallel processes Via Technica Sound
+                            Models Authoritative
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </article>
             </div>
-            <div className="col-lg-4 col-12 ">Right Side</div>
+              
+
+
+            <div className="col-lg-4 col-12 ">
+              <aside>
+                <Tags/>
+                <PopularPost/>
+              </aside>
+            </div>
           </div>
         </div>
       </div>
