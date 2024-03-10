@@ -77,7 +77,32 @@ const Contact = () => {
                   <div className="container">
                     <div className="section-header text-center">
                       <span className="subtitle">{conSubTitle}</span>
-                      <h2></h2>
+                      <h2 className="title">{conTitle}</h2>
+                    </div>
+
+                    <div className="section-wrapper">
+                      <form className="contact-form">
+                        <div className="form-group">
+                          <input type="text" name="" id="" placeholder="Your Name *" required />
+                        </div>
+                        <div className="form-group">
+                          <input type="email" name="email" id="email" placeholder="Your E-Mail *" required />
+                        </div>
+                         <div className="form-group">
+                          <input type="number" name="number" id="" placeholder="Your Mobile Number *" required />
+                        </div>
+                        <div className="form-group">
+                          <input type="text" name="subject" id="" placeholder="Your Subject *" required />
+                        </div>
+                        <div className="form-group w-100">
+                          <textarea name="message" id="message" rows="" placeholder="Your Message"></textarea>
+                        </div>
+                        <div className="form-group w-100 text-center ">
+                            <button className="lab-btn">
+                              <span>{btnText}</span>
+                            </button>
+                        </div>
+                      </form>
                     </div>
                   </div>
       </div>
