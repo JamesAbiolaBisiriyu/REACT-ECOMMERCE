@@ -1,6 +1,11 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, {  useState, useContext  } from "react";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/images/logo/logo.png";
+import { AuthContext } from "../context/AuthProvider";
+
+
+
+
 
 const NavItems = () => {
   const [menuToggle, setMenuToggle] = useState(false);
@@ -8,11 +13,12 @@ const NavItems = () => {
   const [headerFixed, setHeaderFixed] = useState(false);
 
   // add event listener
+  const user = useContext(AuthContext);
   window.addEventListener("scroll", () => {
     if (window.scrollY > 200) {
       setHeaderFixed(true);
     } else {
-      setHeaderFixed(false);
+      setHeaderFixed(false);                                
     }
   });
 

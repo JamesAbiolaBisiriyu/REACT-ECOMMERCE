@@ -22,18 +22,27 @@ import SingleProduct from "./shop/SingleProduct.jsx";
 import CartPage from "./shop/CartPage.jsx";
 import SingleBlog from "./blog/SingleBlog.jsx";
 import About from "./about/About.jsx";
-import Contact from "./contact/Contact.jsx";
+import Contact from "./contact/Contact.jsx"
+import AuthProvider from "./context/AuthProvider.jsx";
+// import Login from "./components/Login.jsx";
+// import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
+// import Login from "./components/Login.jsx";
 import LoginDemo from "./components/LoginDemo.jsx";
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
       // 1 child created
-      { path: "/", element: <Home /> },
-      { path: "/blog", element: <Blog /> },
-      { path: "/blog/:id", element: <SingleBlog/> },
+      { path: "/", 
+      element: <Home /> 
+      },
+      { path: "/blog", 
+      element: <Blog /> 
+      },
+      { path: "/blog/:id", 
+      element: <SingleBlog/> 
+      },    
       {
         path: "/shop",
         element: <Shop />,
@@ -44,7 +53,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart-page",
-        element: <CartPage />,
+        element: <CartPage/>
       },
       {
         path: "/about",
@@ -54,14 +63,18 @@ const router = createBrowserRouter([
         path: "/contact",
         element:<Contact/>
       },
-    ],
+      {
+        path: 'login',
+        element:<LoginDemo/>
+      }  
+     ],
   },
-  {
-    path: "/login",
-    element: <LoginDemo/>
-  }
+
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
+  <AuthProvider>
   <RouterProvider router={router} />
+
+   </AuthProvider>
 );
