@@ -7,37 +7,39 @@ const btnText = "Get Started Now";
 
 const categoryList = [
   {
-    imgUrl: "https://images-cdn.ubuy.co.in/64e10abf12bda3455b7b43e7-nikon-d3500-dslr-camera-with-18-55mm.jpg",
+    imgUrl: "https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2021/03/buying-your-first-dslr-6.jpg?fit=1500%2C1000&ssl=1",
+    // imgUrl: 'https://m.media-amazon.com/images/I/81wk12fBFES._AC_SL1500_.jpg',
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "DSLR Camera",
   },
   {
-    imgUrl: "https://www.ndure.com/cdn/shop/products/M-BF-STP-0002-TAN.jpg?v=1664362573",
+    // imgUrl: "https://domf5oio6qrcr.cloudfront.net/medialibrary/7262/hb-feet-0616207265009467.jpg",
+    imgUrl: 'https://people.com/thmb/8LOaEHYiImG4A28zi6lplN8YcxI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Best-Comfortable-Dress-Shoes-of-2023-tout-f0677d2031d7485992bc5cccfe173245.jpg',
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Shoes",
   },
   {
-    imgUrl: "https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/exposure-in-photography/thumbnail.jpeg",
+    imgUrl: "https://quickphotodubai.com/wp-content/uploads/2021/11/Best-professional-photographers-in-Dubai2.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Photography",
   },
   {
-    imgUrl: "//category/04.jpg",
+    imgUrl: "https://www.brides.com/thmb/BAkK8Sl-wCY3EQzwNiu92zcEu10=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/semi-formal-attire-recirc-REBECCA-YALE-PHOTOGRAPHY-a57b76eac9b14e4e85377c58a8df86b3.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Formal Dress",
   },
   {
-    imgUrl: "public/category/05.jpg",
+    imgUrl: "https://girlyessentials.com.ng/wp-content/uploads/2022/07/giftbag.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Colorful Bags",
   },
   {
-    imgUrl: "public/category/06.jpg",
+    imgUrl: "https://m.media-amazon.com/images/I/81aMwe7G72L._AC_SL1500_.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Home Decor",
@@ -62,7 +64,7 @@ const HomeCategory = () => {
                   <div className="category-inner">
                     {/* image thumbnail */}
                     <div className="category-thumb">
-                      <img className="img-fluid"src={val.imgUrl} alt="" />
+                      <img className="itemed "src={val.imgUrl} alt="" />
                     </div>
                     {/* content */}
                     <div className="category-content">
