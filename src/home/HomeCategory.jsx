@@ -7,7 +7,7 @@ const btnText = "Get Started Now";
 
 const categoryList = [
   {
-    imgUrl: "//category/01.jpg",
+    imgUrl: "https://images-cdn.ubuy.co.in/64e10abf12bda3455b7b43e7-nikon-d3500-dslr-camera-with-18-55mm.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "DSLR Camera",
@@ -31,13 +31,13 @@ const categoryList = [
     title: "Formal Dress",
   },
   {
-    imgUrl: "//category/05.jpg",
+    imgUrl: "public/category/05.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Colorful Bags",
   },
   {
-    imgUrl: "//category/06.jpg",
+    imgUrl: "public/category/06.jpg",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Home Decor",
@@ -62,7 +62,7 @@ const HomeCategory = () => {
                   <div className="category-inner">
                     {/* image thumbnail */}
                     <div className="category-thumb">
-                      <img src={val.imgUrl} alt="" />
+                      <img className="img-fluid"src={val.imgUrl} alt="" />
                     </div>
                     {/* content */}
                     <div className="category-content">

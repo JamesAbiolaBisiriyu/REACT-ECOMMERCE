@@ -16,7 +16,7 @@ const Blog = () => {
                   <div key={i} className='col'>
                     <div className='post-item'>
                       <div className='post-inner'>
-                        <div className='post-thumb'>
+                        <div className='post-thumb className="img-fluid rounded "'>
                           <Link to={`/blog/${blog.id}`}><img src={blog.imgUrl} alt="" /></Link>
                         </div>
                         <div className='post-content'>
