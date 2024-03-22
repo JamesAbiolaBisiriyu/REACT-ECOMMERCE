@@ -13,7 +13,7 @@ const categoryList = [
     title: "DSLR Camera",
   },
   {
-    imgUrl: "//category/02.jpg",
+    imgUrl: "https://www.ndure.com/cdn/shop/products/M-BF-STP-0002-TAN.jpg?v=1664362573",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Shoes",
