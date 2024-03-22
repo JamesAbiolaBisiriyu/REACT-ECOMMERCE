@@ -2,8 +2,9 @@ import React, { useContext, useState } from "react";
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../firebase/firebase.config";
 import { initializeApp } from "firebase/app";
-import { AuthContext } from "../context/AuthProvider";
+import AuthProvider, { AuthContext } from "../context/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 const title = 'Login'
 const socialTitle = 'Login with Social Media '
 const btnText = 'Login Now'
@@ -22,6 +23,7 @@ const provider = new GoogleAuthProvider();
 const LoginDemo = () => {
 const [erorrMessage, setErorrMessage] = useState('');
 // const { LoginDemo} = useContext(AuthContext)
+const {signUpWithGmail, login}=useContext(AuthContext);
 const location = useLocation();
 const navigate = useNavigate();
 
@@ -29,21 +31,47 @@ const from = location.state?.from?.pathname || '/';
 
   const auth = getAuth();
 
-  const handleLogin = () => {
-    console.log("Btn Clicked");
-    signInWithPopup(auth, provider)
-      .then((result) => {
-        const user = result.user;
-        alert("Login Successfully Done!");
-      })
-      .catch((error) => {
-        // Handle Errors here.
-        const errorCode = error.code;
-        const errorMessage = error.message;
-        console.log(errorMessage);
-      });
+  // const handleLogin = () => {
+  //   console.log("Btn Clicked");
+  //   signInWithPopup(auth, provider)
+  //     .then((result) => {
+  //       const user = result.user;
+  //       alert("Login Successfully Done!");
+  //     })
+  //     .catch((error) => {
+  //       // Handle Errors here.
+  //       const errorCode = error.code;
+  //       const errorMessage = error.message;
+  //       console.log(errorMessage);
+  //     });
 
-  };
+  // };
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    console.log(form);
+    const  email = form.email.value;
+    const password = form.password.value;
+    // console.log(email,password); 
+    login( email, password).then((result)=>{
+      const  user=result.user;
+      alert('Login Successful')
+      navigate(from, {replace: true}) 
+    }).catch((error) => {
+      const errorMsg = error.message;
+      setErorrMessage('Please Provide Valid Email & Password');
+    })
+  }
+
+  const handleRegister = ()=> {
+    signUpWithGmail().then((result) => {
+      const user = result.user;
+      navigate(from, {replace: true}) 
+    }) .catch((error) => {
+      const errorMsg = error.message;
+      setErorrMessage('Please Provide Valid Email & Password');
+    })
+  }
   return (
     <div className="login-section padding-tb section-bg">
       <div className="container">
@@ -56,6 +84,16 @@ const from = location.state?.from?.pathname || '/';
             <div className="form-group">
               <input type="password" name="password" id="password" placeholder="password *" required />
             </div>
+            {/* showing message */}
+            <div>
+              {
+                erorrMessage && (
+                  <div className="error-message text-danger mb-1">
+                    {erorrMessage}
+                  </div>
+                )
+              }
+            </div>
             <div className="form-group">
               <div className="d-flex justify-content-between flex-wrap pt-sm-2 ">
                 <div className="checkgroup">
@@ -66,19 +104,40 @@ const from = location.state?.from?.pathname || '/';
               </div>
             </div>
             <div className="form-group">
-                <button type="submit" className="d-block lab-btn">
+                <Button type="submit" className="d-block lab-btn">
                   <span>{btnText}</span>
-                </button>
+                </Button>
             </div>
           </form>
           {/* account button */}
           <div className="account-bottom">
             <span className="d-block cate pt-10">
-              Don’t have an Account? <Link to='/sign-up'>Sign Up</Link>
+              Do Not Have An Account? <Link to='/sign-up'>Sign Up</Link>
               </span>
               <span className="or">
                 <span>Or</span>
               </span>
+
+
+              {/* social media login */}
+              <h5 className="subtitle">{socialTitle}</h5>
+              <ul className="lab-ul social-icons justify-content-center ">
+                  <li>
+                    <button className="github" onClick={handleRegister}><i className="icofont-github"></i></button>
+                  </li>
+                  <li>
+                    <a href="/" className="facebook"><i className="icofont-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="/" className="twitter"><i className="icofont-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="/" className="linkedin"><i className="icofont-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="/" className="instagram"><i className="icofont-instagram"></i></a>
+                  </li>
+              </ul>
           </div>
         {/* <button className="bg-primary px-4 text-white " onClick={handleLogin}> */}
         {/* Login */}

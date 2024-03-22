@@ -28,6 +28,8 @@ import AuthProvider from "./context/AuthProvider.jsx";
 // import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 // import Login from "./components/Login.jsx";
 import LoginDemo from "./components/LoginDemo.jsx";
+import SignUp from "./components/SignUp.jsx";
+import PrivateRoute from "./PrivateRoute/PrivateRoute.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -53,7 +55,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/cart-page",
-        element: <CartPage/>
+        element:<PrivateRoute><CartPage/></PrivateRoute> 
       },
       {
         path: "/about",
@@ -66,7 +68,11 @@ const router = createBrowserRouter([
       {
         path: 'login',
         element:<LoginDemo/>
-      }  
+      },
+       {
+        path:'sign-up',
+        element:<SignUp/>
+       } 
      ],
   },
 
