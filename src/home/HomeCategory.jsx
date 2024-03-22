@@ -19,7 +19,7 @@ const categoryList = [
     title: "Shoes",
   },
   {
-    imgUrl: "//category/03.jpg",
+    imgUrl: "https://www.superprof.ng/blog/wp-content/uploads/2020/12/photographer-nigeria.png",
     imgAlt: "category rajibraj91 rajibraj",
     iconName: "icofont-brand-windows",
     title: "Photography",
