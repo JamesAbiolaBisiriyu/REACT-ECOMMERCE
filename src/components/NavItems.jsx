@@ -27,6 +27,17 @@ const NavItems = () => {
       className={`header-section style-4 ${
         headerFixed ? "header-fixed fadeInUp" : ""
       } `}
+      style={{
+        boxShadow: "0 1px 3px -2px black",
+        position: "fixed",
+        top: "0px",
+        right: "0",
+        left: "0",
+        height: "55px",
+        background: "white",
+        alignItems: "center",
+        zIndex: "2"
+      }}
     >
       {/* header top start */}
       <div className={`header-top d-md-none  ${socialToggle ? "open" : ""}`}>

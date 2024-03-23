@@ -6,7 +6,7 @@ const title = "Our Products";
 
 const ProductData = [
   {
-    imgUrl: "src/assets/images/categoryTab/01.jpg",
+    imgUrl: "https://i.ebayimg.com/images/g/a44AAOSwJfJkiQhI/s-l1200.jpg",
     cate: "Shoes",
     title: "Nike Premier X",
     author: "assets/images/course/author/01.jpg",
@@ -15,7 +15,7 @@ const ProductData = [
     id: 1,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/02.jpg",
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8DEP0nUiJRIIl0HWJ1ecQkeoOD_Wn_oTGuQ&usqp=CAU",
     cate: "Bags",
     title: "Asthetic Bags",
     author: "assets/images/course/author/02.jpg",
@@ -24,7 +24,7 @@ const ProductData = [
     id: 2,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/03.jpg",
+    imgUrl: "https://store.bellestoreinc.com/wp-content/uploads/2020/10/refurb-iphone-12-black-2020_AV1.jpeg",
     cate: "Phones",
     title: "iPhone 12",
     author: "src/assets/images/categoryTab/brand/apple.png",
@@ -33,7 +33,7 @@ const ProductData = [
     id: 3,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/04.jpg",
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6PjKsq_lj9LMJ88cV5oskj3kMtXPfu-jqTA&usqp=CAU",
     cate: "Bags",
     title: "Hiking Bag 15 Nh100",
     author: "assets/images/course/author/04.jpg",
@@ -42,7 +42,7 @@ const ProductData = [
     id: 4,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/05.jpg",
+    imgUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVOapVK8stLPp4T1NhsRqvJC3bFxoAshXc1Q&usqp=CAU",
     cate: "Shoes",
     title: "Outdoor Sports Shoes",
     author: "assets/images/course/author/05.jpg",
@@ -51,7 +51,7 @@ const ProductData = [
     id: 5,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/06.jpg",
+    imgUrl: "https://static.beautytocare.com/media/catalog/product/c/o/cosrx-advanced-snail-96-mucin-power-essence-100ml.jpg",
     cate: "Beauty",
     title: "COSRX Snail Mucin",
     author: "assets/images/course/author/06.jpg",
@@ -60,7 +60,8 @@ const ProductData = [
     id: 6,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/07.jpg",
+    // imgUrl: "src/assets/images/categoryTab/07.jpg",
+    imgUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtG64lBxaZBFcSxOrM5O8y5z2tNWpcz7W3Hw&usqp=CAU',
     cate: "Bags",
     title: "Look Less Chanel Bag ",
     author: "assets/images/course/author/01.jpg",
@@ -69,7 +70,7 @@ const ProductData = [
     id: 7,
   },
   {
-    imgUrl: "src/assets/images/categoryTab/08.jpg",
+    imgUrl: "https://www-konga-com-res.cloudinary.com/w_400,f_auto,fl_lossy,dpr_3.0,q_auto/media/catalog/product/Q/E/196210_1658222112.jpg",
     cate: "Shoes",
     title: "Casual Sneakers",
     author: "assets/images/course/author/02.jpg",
